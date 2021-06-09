@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Test Landing</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel='stylesheet' href="css/style.css">
+</head>
+<body>
+    <header class="menu">
+       <div class="wrap">
+    	   <div class="menu__container">
+    		    <div class="menu__logo">
+                    <img src="icon/test.svg" alt="logo" width="147px" height="32px">
+    		    </div>
+    		    <nav class="nav menu__list">
+                  <a href="#" class="nav__link">Клиентам</a>
+                  <a href="#" class="nav__link nav__link_icon" id="startButton">Войти</a>
+    		    </nav>
+    	   </div>
+    	   <div class="first-block menu__content">
+    	   	<div class="first-block__container">
+               <div class="first-block__box">
+                  <h1 class="first-block__title">Подбор авто в лизинг<br/> по выгодной цене</h1>
+                  <p class="first-block__text">IT платформа по быстрому поиску автомобиля<br/> от     официальных дилеров РФ</p>
+                  <a href="#" class="button-primary">Регистрация</a>
+               </div>
+            </div>
+    	   </div>
+        </div>
+    </header>
+    <main>
+    	<div class="wrap">
+           <div class="advantages">
+              <h2 class="advantages__title">Меньше условий – больше возможностей</h2>
+              <div class="second-block advantages__container">
+              	  <div class="second-block__box">
+              	  	  <div class="second-block__content">
+              	          <h3 class="second-block__title">Экономия времени</h3>
+              	          <p class="second-block__text">Дополнительный канал потенциальных клиентов, готовых приобрести автомобиль, без затрат на рекламу и маркетинг.</p>
+              	      </div>
+              	      <div class="second-block__icon">
+              	      	 <img src="icon/time.svg" alt="Иконка">
+              	      </div>
+                  </div>
+                  <div class="second-block__box">
+              	       <div class="second-block__content">
+              	          <h3 class="second-block__title">Никаких задержек</h3>
+              	          <p class="second-block__text">Вы получаете запросы сразу же после отправки клиентом.</p>
+              	      </div>
+              	      <div class="second-block__icon">
+              	      	 <img src="icon/Speed.svg" alt="Иконка">
+              	      </div>
+                  </div>
+                  <div class="second-block__box">
+              	       <div class="second-block__content second-block__pd">
+              	          <h3 class="second-block__title second-block_line ">Максимальная информативность</h3>
+              	          <p class="second-block__text">В каждой заявке указан регион поиска, марка и модель авто, а так же  индивидуальные запросы клиента.</p>
+              	      </div>
+              	      <div class="second-block__icon">
+              	      	 <img src="icon/Information.svg" alt="Иконка">
+              	      </div>
+                  </div>
+                  <div class="second-block__box">
+              	       <div class="second-block__content">
+              	          <h3 class="second-block__title">Удобство общения</h3>
+              	          <p class="second-block__text">Для каждого запроса у вас открыт чат с клиентом с возможностью отправки документов.</p>
+              	      </div>
+              	      <div class="second-block__icon">
+              	      	 <img src="icon/Chat.svg" alt="Иконка">
+              	      </div>
+                  </div>
+               </div>
+           </div>
+           <div class="register">
+           	    <div class="register__container register__img">
+           	        <p class="register__text">Регистрируйся и получай<br/> актуальные запросы на автомобили<br/> от заинтерисованных клиентов</p>
+                    <a href="#" class="button-primary">Регистрация</a>
+                </div>
+           </div>
+       </div>
+    </main>
+
+   <div class="modal" id="modal_window">
+      <div class="modal__content">
+         <div class="modal__box">
+            <div class="modal__button_close" id="modal_close">
+               <span class="close"></span>
+            </div>
+            <div class="modal__body">
+               <h2 class="modal__title">Авторизация</h2>
+               <form class="form modal__form">
+                  <div class="form__field">
+                     <label class="form__label">E-mail</label>
+                     <input type="email" class="form__input" placeholder="Введите e-mail">
+                  </div>
+                  <div class="form__field">
+                     <label class="form__label">Пароль</label>
+                     <input type="text" class="form__input" placeholder="Введите пароль">
+                  </div>
+                  <button type="submit" class="button-primary form__button">Войти</button>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+<script>
+   let modal = document.getElementById("modal_window");
+   let close = document.getElementById("modal_close");
+   let button = document.getElementById("startButton");
+
+button.onclick = function () {
+    modal.style.display = "block";
+ }
+
+ close.onclick = function () {
+    modal.style.display = "none";
+ }
+
+window.onclick = function (event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+
+</script>
+
+</body>
+</html>
