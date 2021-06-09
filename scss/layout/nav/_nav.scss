@@ -1,0 +1,29 @@
+.nav {
+   @include flex (wrap);
+
+   @include respond (small-less) {
+      justify-content: space-around;
+  }
+
+    &__link {
+     font-family: 'Whitney Book';
+     color: $link-color;
+     font-size: 18px;
+
+   &:last-child {
+     margin-left: 101px;
+
+    @include respond (small-less) {
+      margin-left: 0;
+  }
+}
+  &_icon {
+  background-image: url(../icon/login.svg);
+  background-repeat: no-repeat;
+  background-position: left top;
+  background-size: 24px; 
+  padding: 0 12px 0 35px ;
+}
+}
+   
+}

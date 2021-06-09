@@ -1,0 +1,33 @@
+  /*  register   */
+.register {
+    background-image: $bg-image;
+    border-radius: 10px;
+    padding: 16px 0;
+    height: 371px;
+
+   &__container {
+    padding-top: 5%;
+    padding-left: 6%;
+    width: 100%;
+    height: 100%;
+}
+   &__img {
+    background: url(../img/car.png);
+    background-repeat: no-repeat;
+    background-position: top 3px right;
+    background-size: 732px  340px;
+}
+   &__text {
+    font-family: 'Whitney Semibold';
+    color: #fff;
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 45px;
+    line-height: 1.3;
+
+    @include respond (small) {
+        font-size: 26px;
+        margin-bottom: 20%;
+    }
+}
+}

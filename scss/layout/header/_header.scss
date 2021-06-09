@@ -1,0 +1,28 @@
+/*    header   */
+.menu {
+  background-image: $bg-image;
+  height: 700px;
+
+  &__container {
+    @include flex (wrap);
+    justify-content: space-between;
+
+    @include respond (small-less) {
+       flex-direction: column;
+    }
+}
+  &__logo {
+    margin-top: 34px;
+
+    @include respond (small-less) {
+        text-align: center;
+    }
+}
+  &__list {
+  margin-top: 37px;
+}
+  &__content {
+     margin-top: 90px;
+}
+
+}

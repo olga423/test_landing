@@ -1,0 +1,52 @@
+/*  шрифты */
+@font-face {
+    font-family: 'Whitney Book';
+    src: url('Whitney-Book.eot');
+    src: local('Whitney Book Regular'), local('Whitney-Book'),
+        url('../fonts/Whitney-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Book.woff') format('woff'),
+        url('../fonts/Whitney-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Whitney Semibold';
+    src: url('Whitney-Semibold.eot');
+    src: local('Whitney Semibold Regular'), local('Whitney-Semibold'),
+        url('../fonts/Whitney-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Semibold.woff') format('woff'),
+        url('../fonts/Whitney-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Whitney Medium';
+    src: url('Whitney-Medium.eot');
+    src: local('Whitney Medium Regular'), local('Whitney-Medium'),
+        url('../fonts/Whitney-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Whitney-Medium.woff') format('woff'),
+        url('../fonts/Whitney-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI';
+    src: url('SegoeUI.eot');
+    src: local('Segoe UI'), local('SegoeUI'),
+        url('../fonts/SegoeUI.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SegoeUI.woff') format('woff'),
+        url('../fonts/SegoeUI.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Segoe UI SemiBold';
+    src: url('SegoeUI-SemiBold.eot');
+    src: local('Segoe UI Semibold'), local('SegoeUI-SemiBold'),
+        url('SegoeUI-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('SegoeUI-SemiBold.woff') format('woff'),
+        url('SegoeUI-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+

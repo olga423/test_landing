@@ -1,0 +1,25 @@
+.form {
+    @include flex (colomn);
+
+ &__field {
+    margin-bottom: 17px;
+}
+ &__label {
+      font-family: 'Whitney Medium';
+      font-size: 18px;
+      display: block;
+      margin-bottom: 10px;
+}
+ &__input {
+    font-family: 'Whitney Book';
+    border: 1px solid #DDDAE7;
+    border-radius: 4px;
+    color: #918D9A;
+    padding: 0.7rem;
+    width: 100%;
+}
+ &__button {
+    margin-top: 16px;
+    border: 0;
+}
+}

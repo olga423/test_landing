@@ -1,0 +1,49 @@
+//миксин flexbox
+@mixin flex ($type) {
+  @if ($type == 'wrap') {
+      display: flex;
+      flex-wrap: wrap;
+   } @else if ($type == 'colomn'){
+      display: flex;
+      flex-flow: column;
+   } 
+}
+
+//миксин медиазапросы
+@mixin respond ($breakpoint) {
+    @if($breakpoint == large-up) {
+      @media screen and (min-width: 1200px) {    
+        @content;
+        }
+     }
+     @else if($breakpoint == medium-up) {
+      @media screen and (max-width: 1199.98px) {   
+        @content;
+        }
+     }
+     @else if($breakpoint == medium) {
+      @media screen and (min-width: 768px) and (max-width: 1199.98px) {  
+        @content;
+        }
+     }
+    @else if($breakpoint == large) {
+      @media screen and (max-width: 991.98px) { 
+        @content;
+        }
+     }
+    @else if($breakpoint == small) {
+      @media screen and (max-width: 767.98px) {  
+        @content;
+        }
+     }
+    @else if($breakpoint == small-less) {
+      @media screen and (max-width: 576px) {
+        @content;
+        }
+     }
+     @else if($breakpoint == small-up) {
+      @media screen and (min-width: 576px) {
+        @content;
+        }
+     }
+  }
