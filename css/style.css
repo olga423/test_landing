@@ -596,4 +596,10 @@ img {
      .second-block__icon {
           display: none;
      }
+     .modal__title {
+          font-size: 35px;
+     }
+     .modal__body {
+          padding: 0 40px 55px 40px;
+     }
 }
