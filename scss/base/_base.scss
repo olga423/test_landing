@@ -33,26 +33,24 @@ a {
   background-color: transparent; 
   }
 a:hover {
-  text-decoration: none; 
+  text-decoration: underline; 
   }
   
 .wrap {
+    max-width: 1170px;
+    padding: 0 20px;
     margin: 0 auto;
     width: 100%;
 
-    @include respond (large-up) {
-        max-width: 1170px;
+    @include respond (large) {
+        padding: 0 35px;
      }
      @include respond (medium) {
-        max-width: 960px;
-        padding: 20px;
-     }
-     @include respond (small) {
-        padding: 15px;
+        padding: 0 20px;
      }
 }
-main {
-    padding-bottom: 185px;
+.сolor-bg {
+     background-image: $bg-image;
 }
 img {
     max-width: 100%;

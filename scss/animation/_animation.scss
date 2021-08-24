@@ -1,0 +1,39 @@
+/*  блок анимации    */
+.warn {
+     position: absolute;
+     top: -80px;
+     right: 30%;
+     width: 185px;
+     padding: 15px 30px;
+     background-color: #F0EC68;
+     font-weight: 500;
+     letter-spacing: 0.8px;
+     text-align: center;
+}
+.warnTop {
+    animation-name: warnTop;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-delay: 0s;
+    animation-iteration-count: 4;
+    animation-direction: alternate;
+}
+@keyframes warnTop {
+    from {
+       top: -80px;
+    }
+    to {
+       top: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

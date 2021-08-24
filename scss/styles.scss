@@ -1,15 +1,16 @@
 @import 'helpers/variables';
 @import 'helpers/mixins';
+@import 'animation/animation';
 @import 'base/fonts';
 @import 'base/reset';
 @import 'base/base';
 @import 'layout/header/header';
-@import 'layout/header/first';
-@import 'layout/nav/nav';
+@import 'layout/header/nav';
+@import 'layout/main/first-block';
 @import 'layout/main/advantages';
+@import 'layout/main/second-block';
 @import 'layout/main/register';
 @import 'layout/modal/modal';
 @import 'layout/modal/form';
 @import 'button/button';
-
 
