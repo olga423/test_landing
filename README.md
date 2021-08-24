@@ -4,4 +4,4 @@
 * Адаптивная вёрстка.
 * Сборка с помощью Gulp.
 
-Для просмотра проекта пройдите по ссылке https://olga423.github.io/test_landing/
+Посмотреть проект можно по ссылке https://olga423.github.io/test_landing/
